@@ -6,7 +6,7 @@ var logger = require('morgan');
 var express = require('express');
 var app = express();
 
-var MatiereController = require('./matiere/MatiereController');
-app.use('/matieres', MatiereController);
+var MatiereController = require('../Controller/EmployeeController');
+app.use('/employee', MatiereController);
 
 module.exports = app;
